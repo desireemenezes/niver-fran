@@ -1,0 +1,17 @@
+{
+  "name": "feliz-niver-fran",
+  "version": "1.0.0",
+  "description": "Site criado para mostrar Feliz Anivers�rio Fran",
+  "main": "server.js",
+  "dependencies": {
+    "path": "0.12.7",
+    "body-parser": "1.18.3",
+    "express": "4.16.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

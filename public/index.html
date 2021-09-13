@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Feliz Aniversário</title>
+</head>
+<body>
+    <header>
+        <input id="button" type="button" value="Open" onclick="mostrar()">
+    </header>
+    <section id ="card" style="display: none;">
+        <div >
+        </div>
+    </section>
+    <footer>
+        <p>&copy; By Desi</p>
+    </footer>
+    <script>
+        var texto = window.document.getElementById('card');
+        var audio1 = new Audio();
+
+        function mostrar(){
+        texto.style.display = "block";
+        texto.innerHTML = `<p>Feliz Aniversário Francieli Roque #TRINTOU!<p>`
+        texto.innerHTML += `<p>\u{1F973} \u{1F973} \u{1F382} \u{1F382} </p>`
+        audio1.src = "Parabéns pra Você.mp3";
+        audio1.play();
+        }
+
+        function ocultar(){
+        texto.style.display = "none";
+        texto.innerHTML = `<p><p>`
+        audio1.src = "";
+        audio1.play();
+        }
+    </script>
+</body>
+</html>
